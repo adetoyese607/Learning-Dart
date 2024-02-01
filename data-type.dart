@@ -1,3 +1,7 @@
+// import 'dart:math';
+// import 'dart:collection';
+enum capo { Welcome, To, School }
+
 void main() {
   // DATA TYPES
 
@@ -48,7 +52,7 @@ void main() {
   // }
 
 // SETS
-  var ade = <String>{'Hello FAmily'};
+  // var ade = <String>{'Hello FAmily'};
   // print('All i habe to say is $ade');
 
   // Set<String> ade2 = {'Hello Family'};
@@ -59,36 +63,91 @@ void main() {
   // Set<String> list2 = {'Cat', 'Dog', 'Elephant', 'Cat', 'Dog'};
   // print(list2);
 
-  ade.add('Congrats');
-  print(ade);
-  var newSet = {'Adepto', 'Dadea', 'Sammy'};
-  ade.addAll(newSet);
-  print(ade);
+  // ade.add('Congrats');
+  // print(ade);
+  // var newSet = {'Adepto', 'Dadea', 'Sammy'};
+  // ade.addAll(newSet);
+  // print(ade);
   // print(ade.elementAt(0)); Beter way
-  var first = ade.elementAt(0);
-  print(first);
+  // var first = ade.elementAt(0);
+  // print(first);
 
-  int Q = ade.length;
-  print(Q);
+  // int Q = ade.length;
+  // print(Q);
 
-  bool check = ade.contains('Congrats');
-  print(check);
+  // bool check = ade.contains('Congrats');
+  // print(check);
 
-  ade.remove('Adepto');
-  print(ade);
+  // ade.remove('Adepto');
+  // print(ade);
 
-  print('');
+  // print('');
 
-  ade.forEach((element) {
-    if (element == 'Dadea') {
-      print('Found');
-    } else {
-      print('Not found');
-    }
-  });
-  ade.clear();
-  print('The empty set $ade');
+  // ade.forEach((element) {
+  //   if (element == 'Dadea') {
+  //     print('Found');
+  //   } else {
+  //     print('Not found');
+  //   }
+  // });
+  // ade.clear();
+  // print('The empty set $ade');
 
 // Converting Set to List in Dart
+  // var Gadget = <String>{'Phone', 'LAptop', 'Airpud', 'Tablets'};
+  // print('In Set we haave $Gadget');
+  // List<String> Gadget_list = Gadget.toList();
+  // print('Now in List it is $Gadget_list');
 
+  // Set to Map
+  // var Gadget_map = Gadget.map((e) {
+  //   return 'Hello $e';
+  // });
+  // print(Gadget_map);
+
+// Set Operation in Dart
+  // var ade1 = <String>{'Wale', 'Tope', 'Fumi', 'Kemi'};
+  // print(ade1);
+
+  // var ade2 = <String>{'Samson', 'Tola', 'Tope', 'Bisi'};
+  // print(ade2);
+  // print('');
+
+  // print('Union Of the two Set is ${ade1.union(ade2)} \n');
+  // print('Intersection of the two set is ${ade1.intersection(ade2)} \n');
+  // print('The difference btw the two set id ${ade2.difference(ade1)} \n');
+
+// MAP
+  // var ade = {'Name': 'Ade' 'is' 'Godd'};
+  // print(ade);
+  // print(ade['Name']);
+
+  // var Sam = new Map();
+  // Sam[0] = 'Ade';
+  // Sam[1] = 'Hello';
+  // Sam[2] = 'World';
+  // print(Sam);
+
+  // Queues in DART
+  // List<String> adelist = ['Ade', 'Sam', 'Great'];
+  // Queue<String> Adequeue = new Queue<String>.from(adelist);
+
+  // print(Adequeue);
+
+  // Adequeue.add('Kemisola');
+  // print(Adequeue);
+
+  // List<String> addmore = ['Jola', 'Dada'];
+  // Adequeue.addAll(addmore);
+  // print(Adequeue);
+
+  // Adequeue.addFirst('Faruq');
+  // print(Adequeue);
+
+  // Adequeue.forEach(print);
+
+  // Data Enumeration in Dart
+  for (capo ade in capo.values) {
+    print(ade);
+  }
 }
