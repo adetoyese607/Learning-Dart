@@ -2,7 +2,7 @@ class Gfg {
   String geek1 = '';
 
   geeks() {
-    print('Heloo Everone');
+    print('Heloo Everone to ${geek1}');
   }
 }
 
@@ -31,6 +31,11 @@ void main() {
   print('IS cat hungry? ${cat.isHungry}');
 
   print('Is cat cuddly? ${cat.isCuddly}');
+
+  Gfg geek = new Gfg();
+
+  geek.geek1 = 'Geeks for Geeks';
+  geek.geeks();
 }
 
 class Cat {
