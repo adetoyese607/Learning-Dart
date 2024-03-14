@@ -1,7 +1,9 @@
 void main() {
-  newGeek ade = new newGeek();
+  Gfg geek = new Gfg();
 
-  ade.printdaa();
+  geek.printdata();
+  geek.printdata2();
+  geek.printdata3();
 }
 
 class Geek {
@@ -10,9 +12,28 @@ class Geek {
   }
 }
 
-class newGeek implements Geek {
-  
-  void printdaa() {
+class Geek2 {
+  void printdata2() {
     print('Hello World');
+  }
+}
+
+class Geek3 {
+  void printdata3() {
+    print('Hello World War');
+  }
+}
+
+class Gfg implements Geek, Geek2, Geek3 {
+  void printdata() {
+    print('God father');
+  }
+
+  void printdata2() {
+    print('Hello 2');
+  }
+
+  void printdata3() {
+    print('Hello Fuckers');
   }
 }
